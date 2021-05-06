@@ -60,14 +60,14 @@ function AMADialog({ onLoggedIn, role }: AMADialogProps){
         )}
       >
         <div className="Vlt-card__header">
-          <h3>Please Provide Your Details</h3>
-          <p>so we can contact you in case we do not get to answer your question later</p>
+          <h3>あなたの詳細情報を入力してください</h3>
+          <p>ご質問にお答えできなかった場合に備えて、後日ご連絡いたします</p>
         </div>
         <div className="Vlt-card__content">
-          <TextInput text={firstName} onChange={setFirstName} placeholder="Please enter your First Name"/>
-          <TextInput text={lastName} onChange={setLastName} placeholder="Please enter your Last Name"/>
-          <TextInput text={email} onChange={setEmail} placeholder="Please enter your Email"/>
-          <TextInput text={companyName} onChange={setCompanyName} placeholder="Please enter Company Name"/>
+          <TextInput text={firstName} onChange={setFirstName} placeholder="名前を入力してください"/>
+          <TextInput text={lastName} onChange={setLastName} placeholder="姓を入力してください"/>
+          <TextInput text={email} onChange={setEmail} placeholder="E-mailアドレスを入力してください"/>
+          <TextInput text={companyName} onChange={setCompanyName} placeholder="会社名を入力してください"/>
         </div>
         <div 
           className={clsx(
@@ -76,8 +76,8 @@ function AMADialog({ onLoggedIn, role }: AMADialogProps){
             mStyles.footer
           )}
         >
-          <small>This App is best experienced with Chrome as browser</small> <br /> <br />
-          <button type="submit" className="Vlt-btn Vlt-btn--primary Vlt-btn--app" onClick={handleSubmit}>Join</button>
+          <small>このアプリは、ブラウザとしてChromeを使用するのが最適です</small> <br /> <br />
+          <button type="submit" className="Vlt-btn Vlt-btn--primary Vlt-btn--app" onClick={handleSubmit}>参加</button>
         </div>
       </div>
     </form>

@@ -31,7 +31,7 @@ function Main () {
   const publishErrorListener = React.useCallback(
     (error: any) => {
       setPublishFailed(true);
-      alert("We tried to access your camera 3 times but failed. Please make sure you allow us to access your camera and no other application is using it. You may refresh the page to retry.\n\nHowever, as Moderator, you are still able to use other functionality");
+      alert("カメラに3回アクセスしようとしましたが、失敗しました。カメラへのアクセスを許可し、他のアプリケーションがカメラを使用していないことを確認してください。ページを更新して再試行できます");
     },
     []
   )

@@ -72,7 +72,7 @@ function GiveAccessModal({ user, open, onClose }: IGiveAccess) {
           onClick={onClose}
           disabled={sending}
         >
-          Cancel
+          キャンセル
         </button>
         <button
           className="Vlt-btn Vlt-btn--app Vlt-btn--secondary"

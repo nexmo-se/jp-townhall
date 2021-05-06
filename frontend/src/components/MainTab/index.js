@@ -154,7 +154,7 @@ function MainTab ({ user }: MainTabProps) {
             onClick={() => setActiveTab("remote-slides")}
             isActive={activeTab === "remote-slides"}
           >
-            Remote Slides
+            遠隔のスライド
           </TabItem>
         )}
       </TabHeader>

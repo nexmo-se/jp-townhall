@@ -60,8 +60,8 @@ function PollingPanel(){
   else if(!polling || polling.status === "pending") return <>現時点では議決投票項目はありません</>
   else return (
     <>
-      <p>Moderator is starting a polling. Please put your answer by clicking the buttons below.</p>
-      <p>Please note that you are only able to provide answer once.</p>
+      <p>モデレーターが議決投票を開始しています。下のボタンをクリックして答えを入力してください</p>
+      <p>回答できるのは1回のみですのでご注意ください</p>
       <strong>{polling.title}</strong>
       <div className={mStyles.pollContainer}>
         {polling.items.sort((a, b) => {

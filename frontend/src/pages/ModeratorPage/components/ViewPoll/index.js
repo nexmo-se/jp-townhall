@@ -77,7 +77,7 @@ function ViewPoll(){
         ): polling?.status === "started"? (
           <Button 
             className={clsx("Vlt-btn--destructive", mStyles.button)} 
-            text="Stop Polling" 
+            text="議決投票をストップ" 
             onClick={handleStopClick} 
             disabled={sendingSignal}
           />

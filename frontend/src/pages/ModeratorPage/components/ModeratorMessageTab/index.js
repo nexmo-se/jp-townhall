@@ -67,7 +67,7 @@ function ModeratorMessageTab(){
           isActive={activeTab === "recording"}
           onClick={() => setActiveTab("recording")}
         >
-          Recording
+          録画
         </TabItem>
       </TabHeader>
       <TabContent>
