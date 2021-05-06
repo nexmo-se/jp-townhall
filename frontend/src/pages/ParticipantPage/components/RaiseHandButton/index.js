@@ -39,7 +39,7 @@ function RaiseHandButton ({ cameraPublisher }: RaiseHandButtonProps) {
         className="Vlt-btn Vlt-bg-aqua Vlt-white" 
         onClick={handleClick}
       >
-        Raise Hand
+        手を挙げる
       </button>
     )
   }

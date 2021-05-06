@@ -38,7 +38,7 @@ function ModeratorMessageTab(){
             isActive={activeTab === "chats"}
             onClick={() => setActiveTab("chats")}
           >
-            Chats
+            チャット
           </TabItem>
         )}
         {display.questions && (
@@ -46,7 +46,7 @@ function ModeratorMessageTab(){
             isActive={activeTab === "questions"}
             onClick={() => setActiveTab("questions")}
           >
-            Questions
+            質問
           </TabItem>
         )}
         {display.polling && (
@@ -54,14 +54,14 @@ function ModeratorMessageTab(){
             isActive={activeTab === "polling"}
             onClick={() => setActiveTab("polling")}
           >
-            Polling
+            議決投票
           </TabItem>
         )}
         <TabItem
           isActive={activeTab === "settings"}
           onClick={() => setActiveTab("settings")}
         >
-          Settings
+          設定
         </TabItem>
         <TabItem
           isActive={activeTab === "recording"}

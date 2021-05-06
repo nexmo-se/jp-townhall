@@ -43,8 +43,8 @@ function ResetSettings({ clear }: IResetSettings) {
   return (
     <>
       <p>
-        <strong>Reset.</strong> &nbsp;
-        This action will clear the settings. Please clear based on what you want. This action cannot be undo.
+        <strong>リセットします。</strong> &nbsp;
+        このアクションにより、設定がクリアされます。必要な項目をクリアしてください。このアクションは元に戻せません
       </p>
 
       { status === "success" && (
@@ -64,7 +64,7 @@ function ResetSettings({ clear }: IResetSettings) {
         onClick={handleResetQuestionClick}
         disabled={disabled}
       >
-        Reset Questions
+        質問をリセット
       </button>
 
       <button 
@@ -72,7 +72,7 @@ function ResetSettings({ clear }: IResetSettings) {
         onClick={handleResetPollingClick}
         disabled={disabled}
       >
-        Reset Polling
+        議決投票をリセット
       </button>
     </>
   )

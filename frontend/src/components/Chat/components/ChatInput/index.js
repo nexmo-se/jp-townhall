@@ -31,13 +31,15 @@ function ChatInput({ user, byPass = true }: IChatInput){
   return (
     <form className={mStyles.root} onSubmit={handleClick}>
       <TextInput 
+        placeholder="質問を入力してください"
         text={text} 
         onChange={setText} 
         className={mStyles.input}
+
       />
       <Button
         type="submit" 
-        text="Send" 
+        text="送信" 
         onClick={handleClick} 
         className={mStyles.button}
       />

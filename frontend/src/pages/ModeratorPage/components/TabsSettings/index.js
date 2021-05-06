@@ -21,21 +21,21 @@ function TabsSettings() {
   return (
     <>
       <p>
-        <strong>Tabs.</strong> &nbsp;
-        You can setup Tabs here. This will effect all roles
+        <strong>タブ設定: </strong> &nbsp;
+        ここでタブを設定できます。これはすべての役割に影響します
       </p>
 
       <div className={mStyles.tabs}>
         <div>
           <Checkbox 
             value="participants"
-            label="Participants List"
+            label="参加者"
             checked={participantsTab}
             onChange={setParticipantsTab}
           />
           <Checkbox 
             value="chats"
-            label="Chats"
+            label="チャット"
             checked={chatTab}
             onChange={setChatTab} 
           />
@@ -43,13 +43,13 @@ function TabsSettings() {
         <div>
           <Checkbox 
             value="questions"
-            label="Questions"
+            label="質問"
             checked={questionsTab}
             onChange={setQuestionsTab}
           />
           <Checkbox 
             value="polling"
-            label="Polling"
+            label="議決投票"
             checked={pollingTab} 
             onChange={setPollingTab}
           />

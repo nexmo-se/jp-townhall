@@ -56,18 +56,27 @@ function PollingModal({ open = false, onClose, onSuccess }: IPollingModal){
     modalRef.current = undefined;
   }
 
-  React.useEffect(() => {
-    if(open) {
-      if(!modalRef.current) modalRef.current = window.Volta.modal.create("create-polling-modal");
-      modalRef.current.open();
-    }else if(!open) {
-      if(modalRef.current) {
-        modalRef.current.dismiss();
-        onClose();
+  React.useEffect(
+    () => {
+      try {
+        if (open) {
+          if (!modalRef.current) {
+            modalRef.current = window.Volta.modal.create("create-polling-modal");
+          }
+          modalRef.current.open();
+        } else if (!open) {
+          if (modalRef.current) {
+            modalRef.current.dismiss();
+          }
+          modalRef.current = undefined;
+        }
+      } catch (err) {
+        // TODO: modalRef.current.classList is undefined
+        // when you close the modal and switch to another tab
       }
-      modalRef.current = undefined;
-    }
-  }, [ open, onClose ])
+    },
+    [open, onClose]
+  )
 
   return (
     <div 
@@ -78,12 +87,12 @@ function PollingModal({ open = false, onClose, onSuccess }: IPollingModal){
     >
       <div className="Vlt-modal__panel">
         <div className="Vlt-modal__header">
-          <h4>Create polling</h4>
-          <div className="Vlt-modal__dismiss"></div>
+          <h4>議決投票項目作成</h4>
+          <div className="Vlt-modal__dismiss" onClick={onClose}></div>
         </div>
         <div className="Vlt-modal__content">
           <TextInput 
-            label="Title"
+            label="タイトル"
             text={title}
             onChange={setTitle}
             placeholder="" 
@@ -101,22 +110,23 @@ function PollingModal({ open = false, onClose, onSuccess }: IPollingModal){
             className={clsx("Vlt-text-link", mStyles.pointer)}
             onClick={handleAddClick}
           >
-            Add Item
+            項目追加
           </span>
         </div>
         <div className="Vlt-modal__footer">
           <button 
             className="Vlt-btn Vlt-btn--app Vlt-btn--tertiary Vlt-modal__cancel"
             disabled={loading}
+            onClick={onClose}
           >
-            Cancel
+            キャンセル
           </button>
           <button 
             className="Vlt-btn Vlt-btn--app Vlt-btn--secondary"
             onClick={handleCreateClick}
             disabled={loading}
           >
-            Create
+            作成
           </button>
         </div>
       </div>

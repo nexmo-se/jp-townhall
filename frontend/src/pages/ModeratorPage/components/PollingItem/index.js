@@ -35,7 +35,7 @@ function PollingItem({ removeable = false, onChange, onRemove, item }: IPollingI
         <TextInput 
           text={item.option} 
           onChange={handleChange} 
-          placeholder="Option" 
+          placeholder="選択肢" 
         />
       </div>
       <div className="Vlt-col Vlt-col--1of3">
@@ -44,7 +44,7 @@ function PollingItem({ removeable = false, onChange, onRemove, item }: IPollingI
             className={clsx("Vlt-text-link", mStyles.pointer)}
             onClick={handleRemove}
           >
-            Remove
+            削除
           </span>
         )}
       </div>

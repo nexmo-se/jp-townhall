@@ -57,7 +57,7 @@ function PollingPanel(){
   }, [ session, startPollingListener, stopPollingListener ])
 
   if(pollingLoading || selectedLoading) return <>Please wait...</>
-  else if(!polling || polling.status === "pending") return <>You don't have polling at the moment</>
+  else if(!polling || polling.status === "pending") return <>現時点では議決投票項目はありません</>
   else return (
     <>
       <p>Moderator is starting a polling. Please put your answer by clicking the buttons below.</p>

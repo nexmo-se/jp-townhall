@@ -37,7 +37,7 @@ function SettingsModal({ open, onClose }: ISettingsModal){
       large
     >
       <Modal.Header>
-        <h4>Settings</h4>
+        <h4>設定</h4>
         <Modal.Dismiss />
       </Modal.Header>
       <Modal.Content>
@@ -53,14 +53,14 @@ function SettingsModal({ open, onClose }: ISettingsModal){
           onClick={onClose}
           disabled={saving}
         >
-          Cancel
+          キャンセル
         </button>
         <button
           className="Vlt-btn Vlt-btn--app Vlt-btn--secondary"
           onClick={handleSave}
           disabled={saving}
         >
-          Save
+          保存
         </button>
       </Modal.Footer>
     </Modal>

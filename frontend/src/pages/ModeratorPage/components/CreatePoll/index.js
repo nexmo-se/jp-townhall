@@ -13,7 +13,7 @@ function CreatePoll(){
 
   return (
     <>
-      <Button text="Create Polling" onClick={toggleCreateModal} />
+      <Button text="議決投票項目作成" onClick={toggleCreateModal} />
       <PollingModal open={modalOpen} onClose={toggleCreateModal} />
     </>
   )

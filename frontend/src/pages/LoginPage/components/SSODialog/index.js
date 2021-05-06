@@ -64,12 +64,12 @@ function SSODialog({ onLoggedIn, role }: ISSODialog){
         )}
       >
         <div className="Vlt-card__header">
-          <h4>Welcome!</h4>
+          <h4>ようこそ</h4>
           <p>
-            Please enter PIN and click 
-            <code>Join</code>.&nbsp;
-            After you provide a PIN, you need to log in using your 
-            <code>vonage.com</code> email address.
+            PINを入力して、 
+            <code>参加</code>.&nbsp;
+            をクリックしてください。 PINを入力したら、の
+            <code>vonage.com</code> E-mailアドレスを使用してログインしてください.
           </p>
         </div>
         <div className="Vlt-card__content">
@@ -77,7 +77,7 @@ function SSODialog({ onLoggedIn, role }: ISSODialog){
             type="password"
             text={inputPin}
             onChange={setInputPin}
-            placeholder="Enter your pin here"
+            placeholder="ここにPINを入力してください"
             label="PIN"
           />
         </div>
@@ -93,7 +93,7 @@ function SSODialog({ onLoggedIn, role }: ISSODialog){
             className="Vlt-btn Vlt-btn--primary Vlt-btn--app"
             onClick={handleSubmit}
           >
-            Join
+            参加
           </button>
         </div>
       </div>

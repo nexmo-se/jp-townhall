@@ -122,7 +122,7 @@ function MainTab ({ user }: MainTabProps) {
             onClick={handleParticipantsClick}
             isActive={activeTab === "participants"}
           >
-            Participants
+            参加者
           </TabItem>
         )}
         {display.chat && (
@@ -130,7 +130,7 @@ function MainTab ({ user }: MainTabProps) {
             onClick={handleChatsClick}
             isActive={activeTab === "chats"}
           >
-            Chats
+            チャット
           </TabItem>
         )}
         {display.questions && (
@@ -138,7 +138,7 @@ function MainTab ({ user }: MainTabProps) {
             onClick={handleQuestionsClick}
             isActive={activeTab === "questions"}
           >
-            Questions
+            質問
           </TabItem>
         )}
         {display.polling && (
@@ -146,7 +146,7 @@ function MainTab ({ user }: MainTabProps) {
             onClick={handlePollingClick}
             isActive={activeTab === "polling"}
           >
-            Polling
+            議決投票
           </TabItem>
         )}
         { activeTab === "remote-slides" && (
@@ -172,7 +172,7 @@ function MainTab ({ user }: MainTabProps) {
         {display.questions && (
           <TabPanel isActive={activeTab === "questions"}>
             <p className={clsx(mStyles.textHeader, "Vlt-center")}>
-              You can put your question here. Anyone can vote to increase visibility as well.
+              ここに質問を入力することができます。誰でも投票して順位を上げることができます
             </p>
             <QuestionPanel />
           </TabPanel>

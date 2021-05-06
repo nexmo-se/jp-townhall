@@ -40,7 +40,7 @@ function QuestionItem({ question }: IQuestionItem){
             className="Vlt-text-link"
             onClick={handleMarkAsAnswered}
           >
-            Mark as answered
+            回答済みにマーク
           </span>
         </p>
         {question.status !== "selected" && (
@@ -49,7 +49,7 @@ function QuestionItem({ question }: IQuestionItem){
               className="Vlt-text-link"
               onClick={handleMarkAsSelected}
             >
-              Select
+              選択
             </span>
           </p>
         )}

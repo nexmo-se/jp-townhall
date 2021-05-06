@@ -30,7 +30,7 @@ function RecordingPanel(){
   return (
     <div className={mStyles.container}>
       <Button 
-        text="Refresh"
+        text="リフレッシュ"
         className="Vlt-btn--tertiary"
         onClick={handleRefresh}
         disabled={fetching}

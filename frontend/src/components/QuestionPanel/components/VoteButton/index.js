@@ -53,7 +53,7 @@ function Vote({ question }: IVote){
       >
         {question.vote}
       </p>
-      <span>Vote</span>
+      <span>投票</span>
     </div>
   )
 }

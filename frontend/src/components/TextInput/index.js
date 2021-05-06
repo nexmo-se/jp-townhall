@@ -45,5 +45,5 @@ function TextInput({
   )
 }
 
-TextInput.defaultProps = { placeholder: "Say something..." }
+TextInput.defaultProps = { placeholder: "質問を入力してください" }
 export default TextInput;

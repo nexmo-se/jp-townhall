@@ -2,6 +2,7 @@
 import React from "react";
 import User from "entities/user";
 import AuthService from "../../services/auth";
+import clsx from "clsx";
 import type { Role } from "entities/user";
 
 import useStyles from "./styles";
@@ -26,10 +27,10 @@ function AskNameDialog({ disabled = false, role, onLoggedIn }: IAskNameDialog){
     e.preventDefault();
     if (!text) {
       alert("Please enter your name");
-    }else {
-      try{
+    } else {
+      try {
         const acceptedRole = [ "presenter", "participant", "moderator" ];
-        if (acceptedRole.includes(role)){
+        if (acceptedRole.includes(role)) {
           await AuthService.login({
             tenant,
             role,
@@ -37,8 +38,8 @@ function AskNameDialog({ disabled = false, role, onLoggedIn }: IAskNameDialog){
           });
           const user = new User({ name: text, role });
           onLoggedIn(user);
-        }else alert("Wrong role");
-      }catch(err){ 
+        } else alert("Wrong role");
+      } catch(err) {
         alert("Wrong PIN");
       }
     }
@@ -48,14 +49,14 @@ function AskNameDialog({ disabled = false, role, onLoggedIn }: IAskNameDialog){
     <form className={mStyles.container}>
       <div className="Vlt-card Vlt-bg-white" style={{ maxWidth: 500 }}>
         <div className="Vlt-card__header">
-          <h3>Tell Me Your Name</h3>
+          <h3>お名前を教えてください</h3>
         </div>
         <div className="Vlt-card__content">
           <TextInput 
             disabled={disabled}
             text={text} 
             onChange={setText} 
-            placeholder="Please enter your name"
+            placeholder="お名前を入力してください"
           />
           <TextInput 
             disabled={disabled}
@@ -65,14 +66,21 @@ function AskNameDialog({ disabled = false, role, onLoggedIn }: IAskNameDialog){
             placeholder="PIN"
           />
         </div>
-        <div className="Vlt-card__footer Vlt-card__footer--noborder">
+        <div
+          className={
+            clsx(
+              "Vlt-card__footer Vlt-card__footer--noborder",
+              mStyles.footer
+            )
+          }
+        >
           <button 
             type="submit" 
-            className="Vlt-btn Vlt-btn--primary Vlt-btn--app" 
+            className="Vlt-btn Vlt-btn--primary Vlt-btn--app"
             onClick={handleSubmit}
             disabled={disabled}
           >
-            Join
+            参加
           </button>
         </div>
       </div>

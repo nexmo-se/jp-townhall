@@ -20,16 +20,16 @@ function SettingsPanel(){
 
   return (
     <SettingsProvider tenant={tenant}>
-      <p>Go to here if you want:</p>
+      <p>必要に応じて、以下の項目に移動します。:</p>
       <ul className="Vlt-list Vlt-list--simple">
-        <li>Clear Questions</li>
-        <li>Clear Pollings</li>
-        <li>Clear Session</li>
-        <li>Change PIN</li>
-        <li>Tab Configurations</li>
+        <li>質問をクリア</li>
+        <li>議決投票をクリア</li>
+        <li>セッションをクリア</li>
+        <li>PINを変更</li>
+        <li>タブ項目設定</li>
       </ul>
       <Button 
-        text="Show all settings" 
+        text="すべての設定を表示" 
         onClick={toggleOpen}
       />
       <SettingsModal 

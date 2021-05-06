@@ -30,10 +30,10 @@ function PinSettings() {
 
   return (
     <>
-      <p>System will set default PIN for everyone. You can make it yours by setting it up here</p>
+      <p>システムはすべての人にデフォルトのPINを設定します。ここに設定することで、あなたの希望のPINに変更することができます</p>
       <p>
-        <strong>Note: </strong>
-        Leave it blank if you don't wish to change PIN.
+        <strong>注：</strong>
+        PINを変更しない場合は、空白のままにしてください
       </p>
       <Grid spacing={2} container>
         <Grid xs={4} item>
@@ -44,11 +44,11 @@ function PinSettings() {
         </Grid>
         <Grid xs item>
           <TextInput 
-            label="Presenter PIN"
+            label="プレゼンター PIN"
             text={presenterPin}
             onChange={setPresenterPin}
             type="text"
-            placeholder="Enter new pin here"
+            placeholder="新しいPINをここに入力してください"
             autoComplete="off"
           />
         </Grid>
@@ -63,11 +63,11 @@ function PinSettings() {
         </Grid>
         <Grid xs item>
           <TextInput 
-            label="Moderator PIN"
+            label="モデレーター PIN"
             text={moderatorPin}
             onChange={setModeratorPin}
             type="text"
-            placeholder="Enter new pin here"
+            placeholder="新しいPINをここに入力してください"
             autoComplete="off"
           />
         </Grid>
@@ -82,11 +82,11 @@ function PinSettings() {
         </Grid>
         <Grid xs item>
           <TextInput 
-            label="Participant PIN"
+            label="参加者 PIN"
             text={participantPin}
             onChange={setParticipantPin}
             type="text"
-            placeholder="Enter new pin here"
+            placeholder="新しいPINをここに入力してください"
             autoComplete="off"
           />
           <div className="Vlt-checkbox">
@@ -100,7 +100,7 @@ function PinSettings() {
                 />
                 <span class="Vlt-checkbox__icon"></span>
               </span>
-              Allow participants to raise hand
+              参加者に”挙手”を許可する
             </label>
           </div>
         </Grid>

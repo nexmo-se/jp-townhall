@@ -3,8 +3,8 @@ import { Box } from "@material-ui/core";
 
 const loginTypes = [
   { id: "sso", value: "Google SSO" },
-  { id: "default", value: "PIN Only" },
-  { id: "ama", value: "Customer Detatils" }
+  { id: "default", value: "PINのみ" },
+  { id: "ama", value: "お客様情報" }
 ]
 
 interface ILoginTypeDropdown {
@@ -21,7 +21,7 @@ function LoginTypeDropdown({ value, onChange }: ILoginTypeDropdown) {
   return (
     <Box className="Vlt-form__element">
       <label className="Vlt-label">
-        Login Type
+        ログインタイプ
       </label>
       <Box className="Vlt-native-dropdown Vlt-native-dropdown--app">
         <select

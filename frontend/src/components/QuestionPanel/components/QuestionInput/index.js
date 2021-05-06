@@ -47,7 +47,7 @@ function QuestionInput(){
       />
       <Button 
         type="submit"
-        text="Send"
+        text="送信"
         onClick={handleSubmit}
         className={mStyles.button}
         disabled={sending}

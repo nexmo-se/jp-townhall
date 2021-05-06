@@ -70,7 +70,7 @@ function ViewPoll(){
         {polling?.status === "pending"? (
           <Button 
             className={mStyles.button} 
-            text="Start Polling" 
+            text="議決投票を開始" 
             onClick={handleStartClick} 
             disabled={sendingSignal}
           /> 
@@ -90,7 +90,7 @@ function ViewPoll(){
         )}
       </div>
       <Button 
-        text="Refresh" 
+        text="リフレッシュ" 
         className={clsx(
           "Vlt-btn--tertiary",
           mStyles.refreshButton

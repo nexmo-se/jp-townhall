@@ -77,7 +77,7 @@ function Main () {
               flexBasis: "30%"
             }}
           >
-            <h4 className="Vlt-center">RAISING HAND</h4>
+            <h4 className="Vlt-center">挙手</h4>
             <RaisedHandList />
           </div>
           <div className={mStyles.chat} style={{ 
@@ -92,7 +92,7 @@ function Main () {
         </div>
         <div className={mStyles.centerPanel}>
           <div className={mStyles.chat} style={{ flexBasis: "50%", borderBottom: "1px solid #e7ebee" }}>
-            <h4 className="Vlt-center">LIVE PARTICIPANTS</h4>
+            <h4 className="Vlt-center">ライブ参加者</h4>
             <LiveParticipantList>
               {(me)? (
                 <>
@@ -105,7 +105,7 @@ function Main () {
             </LiveParticipantList> 
           </div>
           <div className={mStyles.chat} style={{ flexBasis: "50%", paddingTop: 32 }}>
-            <h4 className="Vlt-center">PARTICIPANTS ({connections.length})</h4>
+            <h4 className="Vlt-center">参加者 ({connections.length})</h4>
             <ParticipantList />
           </div>
         </div>

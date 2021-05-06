@@ -9,6 +9,7 @@ export default makeStyles(() => ({
     marginRight: 8,
     borderRadius: 16,
     border: "1px solid #E6E6E6",
-    padding: 8
+    padding: 8,
+    minWidth: 64
   }
 }), { index: 1 })
