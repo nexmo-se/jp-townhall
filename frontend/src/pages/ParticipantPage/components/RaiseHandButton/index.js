@@ -27,7 +27,7 @@ function RaiseHandButton ({ cameraPublisher }: RaiseHandButtonProps) {
     const user = User.fromConnection(session.connection);
     raiseHand({ user });
     
-    const message = new Message(user, `${user.name} is raising hand`);
+    const message = new Message(user, `${user.name} が手を挙げています`);
     send({ message });
   }
 

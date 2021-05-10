@@ -77,7 +77,7 @@ function Main () {
               flexBasis: "30%"
             }}
           >
-            <h4 className="Vlt-center">挙手</h4>
+            <h4 className="Vlt-center">挙手している人</h4>
             <RaisedHandList />
           </div>
           <div className={mStyles.chat} style={{ 

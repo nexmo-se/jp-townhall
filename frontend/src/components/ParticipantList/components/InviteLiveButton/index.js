@@ -52,7 +52,7 @@ function InviteLiveButton({ user }: IInviteLiveButton){
       style={{ margin: 0 }}
       onClick={handleInviteClick}
     >
-      Invite Live
+      ライブに招待
     </button>
   )
 }

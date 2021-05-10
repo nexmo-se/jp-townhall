@@ -49,13 +49,13 @@ function ResetSettings({ clear }: IResetSettings) {
 
       { status === "success" && (
         <p className="Vlt-green">
-          <strong>Reset complete!</strong>
+          <strong>リセット完了！</strong>
         </p>
       )}
 
       { status === "error" && (
         <p className="Vlt-red">
-          <strong>Reset failed!</strong>
+          <strong>リセット失敗！</strong>
         </p>
       )}
 

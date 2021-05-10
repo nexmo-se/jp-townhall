@@ -67,7 +67,7 @@ function SSODialog({ onLoggedIn, role }: ISSODialog){
           <h4>ようこそ</h4>
           <p>
             PINを入力して、 
-            <code>参加</code>.&nbsp;
+            <code>参加</code>&nbsp;
             をクリックしてください。 PINを入力したら、の
             <code>vonage.com</code> E-mailアドレスを使用してログインしてください.
           </p>

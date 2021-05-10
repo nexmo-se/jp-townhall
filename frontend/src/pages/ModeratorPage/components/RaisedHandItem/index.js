@@ -25,7 +25,7 @@ function RaisedHandItem({ user }:Props){
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 200  }}>
           <p><b>{user.name}</b></p>    
           <button className="Vlt-btn" style={{ margin: 0 }} onClick={handleGoLiveClick}>
-            Go Live
+            ライブに切替
           </button>
         </div>
       </div>
